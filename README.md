@@ -1,16 +1,12 @@
 # Welcome to your Lovable project
 
-## Project info
-
-**URL**: https://lovable.dev/projects/f407320e-1041-419a-9f44-600248b8cfdb
-
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f407320e-1041-419a-9f44-600248b8cfdb) and start prompting.
+Simply visit the [Lovable Project](https://lovable.dev/projects/85dc9384-b86b-43e5-9d5c-4267614ed874) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -27,7 +23,7 @@ Follow these steps:
 git clone <YOUR_GIT_URL>
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd triton-webguard
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -62,7 +58,7 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/f407320e-1041-419a-9f44-600248b8cfdb) and click on Share -> Publish.
+Simply open [Lovable](https://lovable.dev/projects/85dc9384-b86b-43e5-9d5c-4267614ed874) and click on Share -> Publish.
 
 ## I want to use a custom domain - is that possible?
 
