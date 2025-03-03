@@ -21,23 +21,25 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-security-800 leading-tight mb-6">
             
               <span className="relative inline-block ml">
-                <span className="text-gradient">Pentests </span>
+              Triton Infosec,<br></br>
+                <span className="text-gradient">Pentest</span>
                 <svg className="absolute -bottom-2 left-0 w-full h-2 text-accent1/20" 
                      viewBox="0 0 100 8" preserveAspectRatio="none">
                   <path d="M0,5 Q40,0 50,5 Q60,10 100,5 L100,8 L0,8 Z" fill="currentColor" />
                 </svg>
+                &nbsp;Experts.
               </span>
-              &nbsp; that Impress Clients.
+              
             </h1>
             
             <p className="text-lg text-security-600 mb-8 max-w-lg">
               Corporate clients increasingly demand transparency.
-              Prove your systems are protected with a professional Penetration Test (pentest) report from Triton Infosec.
+              Prove your systems are protected with a professional Penetration Test report from Triton Infosec.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="btn-primary" size="lg" onClick={scrollToContact}>
-                Schedule a Consultation
+                Get a quote
               </Button>
             </div>
             

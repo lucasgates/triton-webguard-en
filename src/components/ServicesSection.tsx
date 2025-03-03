@@ -23,13 +23,13 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <ShieldCheck className="h-6 w-6 text-accent1" />,
-      title: "Black Box Infra Pentest",
-      description: "Simulation of hacker attacks that can include external and internal perimeter. This test uses phishing customized for your company. Vulnerability analysis included."
+      title: "Network Pentest",
+      description: "Simulate sophisticated cyber attacks targeting external and internal networks. This assessment includes customized phishing campaigns tailored to your organization."
     },
     {
       icon: <Globe className="h-6 w-6 text-accent1" />,
-      title: "Advanced Web/API Pentest",
-      description: "Comprehensive security assessment of your web applications to discover vulnerabilities in design and implementation. Ideal for SaaS companies."
+      title: "Application Security Testing",
+      description: "Conduct an in-depth security evaluation of your web applications to identify vulnerabilities in both design and implementation. This service is particularly beneficial for SaaS providers seeking to enhance their security posture."
     },
     {
       icon: <Network className="h-6 w-6 text-accent1" />,
@@ -39,17 +39,17 @@ const ServicesSection = () => {
     {
       icon: <Database className="h-6 w-6 text-accent1" />,
       title: "Cyber Security Consulting",
-      description: "Risk assessment and recommendations to improve information security. Includes security awareness training."
+      description: "Evaluate potential security risks and receive expert recommendations to strengthen your organization's cybersecurity."
     },
     {
       icon: <Computer className="h-6 w-6 text-accent1" />,
       title: "Mobile Pentest",
-      description: "Discover security flaws in iOS and Android applications that could compromise user data and privacy."
+      description: "Identify security weaknesses in iOS and Android applications that could expose sensitive user data and compromise privacy."
     },
     {
       icon: <Key className="h-6 w-6 text-accent1" />,
       title: "Secure Development Training",
-      description: "Empower your development team with security best practices to prevent vulnerabilities in your applications."
+      description: "Equip your development team with industry-leading security best practices to proactively identify and prevent vulnerabilities throughout the software development lifecycle."
     }
   ];
 
@@ -62,8 +62,7 @@ const ServicesSection = () => {
           </div>
           <h2 className="section-title">Tailored Pentest Services</h2>
           <p className="section-subtitle">
-            Our expert-led security testing services help organizations identify and resolve 
-            vulnerabilities before they are exploited.
+            Our expert-led security testing services are tailor made to fit your needs and budget.
           </p>
         </div>
 

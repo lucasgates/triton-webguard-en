@@ -45,9 +45,8 @@ const ApproachSection = () => {
               A Strategic Approach to Penetration Testing
             </h2>
             <p className="text-security-600 mb-8">
-              Our systematic methodology ensures a comprehensive assessment of your systems while minimizing 
-              risks to your production environment. We follow best practices such as PTES, NIST, and OWASP WSTG and adapt our 
-              approach to your specific needs.
+            Our proven methodology delivers a thorough evaluation of your systems while ensuring minimal impact on your production environment. 
+            We adhere to industry best practices, including PTES, NIST, and OWASP WSTG, tailoring our approach to align with your organization's unique security requirements.
             </p>
 
             <div className="space-y-10">
