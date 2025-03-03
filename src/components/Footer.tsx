@@ -156,7 +156,7 @@ const Footer = () => {
               <li className="text-white/70">
                 Greater Nashville, TN
               </li>
-              {* <li className="mt-4">
+              {/* <li className="mt-4">
                 <a 
                   href="https://wa.me/5531972291337" 
                   target="_blank" 
@@ -168,7 +168,7 @@ const Footer = () => {
                   </svg>
                   <span>WhatsApp</span>
                 </a>
-              </li> *}
+              </li>  */}
             </ul>
           </div>
         </div>
