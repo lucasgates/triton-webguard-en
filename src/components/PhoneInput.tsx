@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { 
   Select, 
@@ -22,25 +21,25 @@ interface CountryCode {
 }
 
 const PhoneInput: React.FC<PhoneInputProps> = ({ value, onChange, className }) => {
-  const [countryCode, setCountryCode] = useState('+55'); // Brazil as default
+  const [countryCode, setCountryCode] = useState('+1'); // US as default
   const [phoneNumber, setPhoneNumber] = useState(value.replace(/^\+\d+\s/, ''));
 
   const countryCodes: CountryCode[] = [
-    { code: 'BR', dial: '+55', name: 'Brasil' },
-    { code: 'US', dial: '+1', name: 'Estados Unidos' },
+    { code: 'US', dial: '+1', name: 'United States' },
+    { code: 'BR', dial: '+55', name: 'Brazil' },
+    { code: 'UK', dial: '+44', name: 'United Kingdom' },
+    { code: 'CA', dial: '+1', name: 'Canada' },
+    { code: 'DE', dial: '+49', name: 'Germany' },
+    { code: 'FR', dial: '+33', name: 'France' },
+    { code: 'ES', dial: '+34', name: 'Spain' },
+    { code: 'IT', dial: '+39', name: 'Italy' },
     { code: 'PT', dial: '+351', name: 'Portugal' },
-    { code: 'ES', dial: '+34', name: 'Espanha' },
+    { code: 'AU', dial: '+61', name: 'Australia' },
+    { code: 'JP', dial: '+81', name: 'Japan' },
+    { code: 'CN', dial: '+86', name: 'China' },
+    { code: 'IN', dial: '+91', name: 'India' },
+    { code: 'MX', dial: '+52', name: 'Mexico' },
     { code: 'AR', dial: '+54', name: 'Argentina' },
-    { code: 'CL', dial: '+56', name: 'Chile' },
-    { code: 'CO', dial: '+57', name: 'Colômbia' },
-    { code: 'MX', dial: '+52', name: 'México' },
-    { code: 'PE', dial: '+51', name: 'Peru' },
-    { code: 'UY', dial: '+598', name: 'Uruguai' },
-    { code: 'FR', dial: '+33', name: 'França' },
-    { code: 'DE', dial: '+49', name: 'Alemanha' },
-    { code: 'IT', dial: '+39', name: 'Itália' },
-    { code: 'UK', dial: '+44', name: 'Reino Unido' },
-    { code: 'CA', dial: '+1', name: 'Canadá' },
   ];
 
   const handleCountryChange = (value: string) => {
@@ -58,7 +57,7 @@ const PhoneInput: React.FC<PhoneInputProps> = ({ value, onChange, className }) =
     onChange(`${code} ${phone}`);
   };
 
-  // Encontrar o nome do país correspondente ao código
+  // Find the country name corresponding to the code
   const getCountryName = (dial: string) => {
     const country = countryCodes.find(c => c.dial === dial);
     return country ? country.name : '';
@@ -69,13 +68,17 @@ const PhoneInput: React.FC<PhoneInputProps> = ({ value, onChange, className }) =
       <div className="absolute left-0 top-0 bottom-0 z-10 border-r border-input">
         <Select value={countryCode} onValueChange={handleCountryChange}>
           <SelectTrigger className="h-full border-0 rounded-r-none rounded-l-md bg-muted/50 px-3 w-[140px]">
-            <SelectValue placeholder="País">
+            <SelectValue placeholder="Country">
               {getCountryName(countryCode)} {countryCode}
             </SelectValue>
           </SelectTrigger>
           <SelectContent>
             {countryCodes.map(country => (
-              <SelectItem key={country.code} value={country.dial} className="flex justify-between">
+              <SelectItem 
+                key={`${country.code}-${country.dial}`} 
+                value={country.dial} 
+                className="flex justify-between"
+              >
                 {country.name} {country.dial}
               </SelectItem>
             ))}
@@ -86,7 +89,7 @@ const PhoneInput: React.FC<PhoneInputProps> = ({ value, onChange, className }) =
         type="tel"
         value={phoneNumber}
         onChange={handlePhoneChange}
-        placeholder="Seu telefone"
+        placeholder="Your phone number"
         className="pl-[145px]"
       />
     </div>

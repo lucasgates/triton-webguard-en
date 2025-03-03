@@ -1,37 +1,36 @@
-
 import { CheckCircle2 } from 'lucide-react';
 
 const ApproachSection = () => {
   const steps = [
     {
       number: "01",
-      title: "Descoberta e Definição",
-      description: "Trabalhamos com você para entender seus sistemas, aplicações e preocupações de segurança para definir o escopo dos testes."
+      title: "Discovery & Definition",
+      description: "We work with you to understand your systems, applications, and security concerns to define the scope of testing."
     },
     {
       number: "02",
-      title: "Planejamento e Reconhecimento",
-      description: "Nossa equipe coleta informações e desenvolve uma estratégia de teste personalizada específica para seu ambiente e requisitos de segurança."
+      title: "Planning & Reconnaissance",
+      description: "Our team gathers information and develops a customized testing strategy specific to your environment and security requirements."
     },
     {
       number: "03",
-      title: "Teste e Exploração",
-      description: "Usando técnicas avançadas, identificamos e exploramos vulnerabilidades de forma segura para demonstrar impactos reais."
+      title: "Testing & Exploitation",
+      description: "Using advanced techniques, we identify and safely exploit vulnerabilities to demonstrate real impacts."
     },
     {
       number: "04",
-      title: "Análise e Relatório",
-      description: "Fornecemos relatórios detalhados com explicações claras das vulnerabilidades, níveis de risco e etapas recomendadas para correção."
+      title: "Analysis & Reporting",
+      description: "We provide detailed reports with clear explanations of vulnerabilities, risk levels, and recommended steps for remediation."
     }
   ];
 
   const benefits = [
-    "Identificar falhas críticas de segurança",
-    "Validar controles de segurança existentes",
-    "Atender requisitos de conformidade",
-    "Reduzir risco de vazamento de dados",
-    "Melhorar sua postura de segurança",
-    "Proteger a reputação da marca"
+    "Identify critical security flaws",
+    "Validate existing security controls",
+    "Meet compliance requirements",
+    "Reduce risk of data breaches",
+    "Improve your security posture",
+    "Protect brand reputation"
   ];
 
   return (
@@ -40,15 +39,15 @@ const ApproachSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-up">
             <div className="inline-block mb-3 py-1 px-3 bg-accent1/10 rounded-full">
-              <p className="text-accent1 font-medium text-sm">Nossa Metodologia</p>
+              <p className="text-accent1 font-medium text-sm">Our Methodology</p>
             </div>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-security-800">
-              Uma Abordagem Estratégica para Testes de Intrusão
+              A Strategic Approach to Penetration Testing
             </h2>
             <p className="text-security-600 mb-8">
-              Nossa metodologia sistemática garante uma avaliação completa dos seus sistemas enquanto minimiza 
-              riscos ao seu ambiente de produção. Seguimos as melhores práticas, como PTES, NIST, e OWASP WSTG e adaptamos nossa 
-              abordagem às suas necessidades específicas.
+              Our systematic methodology ensures a comprehensive assessment of your systems while minimizing 
+              risks to your production environment. We follow best practices such as PTES, NIST, and OWASP WSTG and adapt our 
+              approach to your specific needs.
             </p>
 
             <div className="space-y-10">
@@ -74,13 +73,13 @@ const ApproachSection = () => {
                 <img 
                   className="w-full h-auto" 
                   src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" 
-                  alt="Visualização de segurança digital" 
+                  alt="Digital security visualization" 
                   loading="lazy"
                 />
               </div>
               
               <div className="absolute -bottom-8 -right-8 md:w-80 bg-white shadow-lg rounded-lg p-6 z-10">
-                <h3 className="text-lg font-semibold mb-4 text-security-800">Benefícios dos Nossos Testes</h3>
+                <h3 className="text-lg font-semibold mb-4 text-security-800">Benefits of Our Testing</h3>
                 <ul className="space-y-3">
                   {benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start">

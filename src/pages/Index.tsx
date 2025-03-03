@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
@@ -49,8 +48,8 @@ const Index = () => {
     // Welcome toast
     setTimeout(() => {
       toast({
-        title: "Bem-vindo à Triton Infosec",
-        description: "Conheça nossos serviços de teste de intrusão para proteger sua empresa.",
+        title: "Welcome to Triton Infosec",
+        description: "Discover our penetration testing services to protect your company.",
       });
     }, 2000);
 

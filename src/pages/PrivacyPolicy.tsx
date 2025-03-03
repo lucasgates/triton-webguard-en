@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -14,56 +13,56 @@ const PrivacyPolicy = () => {
           <div className="max-w-4xl mx-auto">
             <div className="mb-10 flex items-center gap-3">
               <Shield className="h-8 w-8 text-accent1" />
-              <h1 className="text-3xl md:text-4xl font-display font-bold text-security-800">Política de Privacidade</h1>
+              <h1 className="text-3xl md:text-4xl font-display font-bold text-security-800">Privacy Policy</h1>
             </div>
             
             <div className="prose prose-lg max-w-none">
-              <p className="lead">A Triton Infosec se compromete a proteger a privacidade e os dados dos visitantes do nosso site. Esta política explica como coletamos, usamos e protegemos suas informações.</p>
+              <p className="lead">Triton Infosec is committed to protecting the privacy and data of visitors to our website. This policy explains how we collect, use, and protect your information.</p>
               
-              <h2>Informações que Coletamos</h2>
-              <p>Podemos coletar os seguintes tipos de informações:</p>
+              <h2>Information We Collect</h2>
+              <p>We may collect the following types of information:</p>
               <ul>
-                <li><strong>Informações de Contato:</strong> como nome, endereço de e-mail, número de telefone e empresa quando você preenche nossos formulários de contato.</li>
-                <li><strong>Informações de Uso:</strong> como dados sobre como você navega em nosso site, incluindo endereço IP, tipo de navegador, páginas visitadas e tempo gasto em cada página.</li>
-                <li><strong>Cookies:</strong> utilizamos cookies para melhorar sua experiência em nosso site. Você pode ajustar as configurações do seu navegador para recusar cookies, embora isso possa afetar a funcionalidade do site.</li>
+                <li><strong>Contact Information:</strong> such as name, email address, phone number, and company when you fill out our contact forms.</li>
+                <li><strong>Usage Information:</strong> such as data about how you navigate our website, including IP address, browser type, pages visited, and time spent on each page.</li>
+                <li><strong>Cookies:</strong> we use cookies to improve your experience on our website. You can adjust your browser settings to refuse cookies, although this may affect the functionality of the site.</li>
               </ul>
               
-              <h2>Como Usamos suas Informações</h2>
-              <p>Utilizamos as informações coletadas para:</p>
+              <h2>How We Use Your Information</h2>
+              <p>We use the collected information to:</p>
               <ul>
-                <li>Responder às suas solicitações e fornecer o serviço solicitado</li>
-                <li>Melhorar nosso site e serviços</li>
-                <li>Personalizar sua experiência no site</li>
-                <li>Enviar informações sobre nossos serviços (somente se você consentir)</li>
-                <li>Cumprir obrigações legais</li>
+                <li>Respond to your requests and provide the requested service</li>
+                <li>Improve our website and services</li>
+                <li>Personalize your experience on the site</li>
+                <li>Send information about our services (only if you consent)</li>
+                <li>Comply with legal obligations</li>
               </ul>
               
-              <h2>Compartilhamento de Dados</h2>
-              <p>Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto:</p>
+              <h2>Data Sharing</h2>
+              <p>We do not sell, rent, or share your personal information with third parties, except:</p>
               <ul>
-                <li>Quando necessário para prestar os serviços solicitados</li>
-                <li>Para cumprir com obrigações legais</li>
-                <li>Para proteger nossos direitos, propriedade ou segurança</li>
+                <li>When necessary to provide the requested services</li>
+                <li>To comply with legal obligations</li>
+                <li>To protect our rights, property, or safety</li>
               </ul>
               
-              <h2>Segurança de Dados</h2>
-              <p>Implementamos medidas de segurança adequadas para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro.</p>
+              <h2>Data Security</h2>
+              <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
               
-              <h2>Seus Direitos</h2>
-              <p>Você tem o direito de:</p>
+              <h2>Your Rights</h2>
+              <p>You have the right to:</p>
               <ul>
-                <li>Acessar as informações pessoais que mantemos sobre você</li>
-                <li>Solicitar a correção de informações imprecisas</li>
-                <li>Solicitar a exclusão de suas informações pessoais</li>
-                <li>Retirar seu consentimento a qualquer momento</li>
-                <li>Apresentar uma reclamação a uma autoridade de proteção de dados</li>
+                <li>Access the personal information we hold about you</li>
+                <li>Request correction of inaccurate information</li>
+                <li>Request deletion of your personal information</li>
+                <li>Withdraw your consent at any time</li>
+                <li>File a complaint with a data protection authority</li>
               </ul>
               
-              <h2>Alterações nesta Política</h2>
-              <p>Podemos atualizar esta política de privacidade periodicamente. Recomendamos que você revise esta página regularmente para estar ciente de quaisquer alterações. As alterações entram em vigor imediatamente após serem publicadas nesta página.</p>
+              <h2>Changes to This Policy</h2>
+              <p>We may update this privacy policy periodically. We recommend that you review this page regularly to be aware of any changes. Changes take effect immediately after being posted on this page.</p>
               
-              <h2>Contato</h2>
-              <p>Se você tiver dúvidas sobre esta política de privacidade, entre em contato conosco pelo e-mail contato@tritoninfosec.com.</p>
+              <h2>Contact</h2>
+              <p>If you have questions about this privacy policy, please contact us at contact@tritoninfosec.com.</p>
             </div>
           </div>
         </div>

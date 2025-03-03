@@ -1,4 +1,3 @@
-
 import { Shield } from 'lucide-react';
 
 const AboutSection = () => {
@@ -20,7 +19,7 @@ const AboutSection = () => {
                 <img 
                   className="w-full h-auto" 
                   src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" 
-                  alt="Profissional da Triton Infosec trabalhando" 
+                  alt="Triton Infosec professional working" 
                   loading="lazy"
                 />
               </div>
@@ -31,30 +30,30 @@ const AboutSection = () => {
           
           <div className="animate-fade-up">
             <div className="inline-block mb-4 py-1 px-3 bg-white/10 rounded-full">
-              <p className="text-white/80 font-medium text-sm">Sobre a Triton Infosec</p>
+              <p className="text-white/80 font-medium text-sm">About Triton Infosec</p>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">
-              Especialistas de Confiança em Cibersegurança
+              Trusted Cybersecurity Specialists
             </h2>
             
             <p className="text-white/80 mb-6">
-              Na Triton Infosec, construímos nossa reputação com base na excelência técnica e no compromisso profundo em proteger 
-              nossos clientes contra ameaças cibernéticas em evolução. Nossa equipe de profissionais certificados em segurança traz experiência 
-              extensiva em diversos setores e tecnologias.
+              At Triton Infosec, we've built our reputation on technical excellence and a deep commitment to protecting 
+              our clients against evolving cyber threats. Our team of certified security professionals brings extensive experience 
+              across diverse industries and technologies.
             </p>
             
             <p className="text-white/80 mb-10">
-              Fazemos parceria com organizações de todos os tamanhos para identificar vulnerabilidades, fortalecer a postura de segurança 
-              e construir resiliência contra ataques. Nossa abordagem colaborativa garante que compreendamos seus desafios únicos 
-              e entreguemos soluções que atendam às suas necessidades específicas.
+              We partner with organizations of all sizes to identify vulnerabilities, strengthen security posture, 
+              and build resilience against attacks. Our collaborative approach ensures we understand your unique challenges 
+              and deliver solutions that meet your specific needs.
             </p>
             
             <div className="bg-security-700 rounded-lg p-6 border border-security-600">
-              <h3 className="text-xl font-semibold mb-3 text-white">Nossa Missão</h3>
+              <h3 className="text-xl font-semibold mb-3 text-white">Our Mission</h3>
               <p className="text-white/80">
-                Capacitar organizações com o conhecimento e as ferramentas necessárias para proteger seus ativos digitais e construir 
-                confiança com seus clientes por meio de medidas proativas de segurança e orientação especializada.
+                To empower organizations with the knowledge and tools necessary to protect their digital assets and build 
+                trust with their customers through proactive security measures and expert guidance.
               </p>
             </div>
           </div>

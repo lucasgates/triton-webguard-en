@@ -1,15 +1,14 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const [emailDisplay, setEmailDisplay] = useState('contato[at]tritoninfosec[dot]com');
+  const [emailDisplay, setEmailDisplay] = useState('contact[at]tritoninfosec[dot]com');
   const [realEmail, setRealEmail] = useState('');
 
   useEffect(() => {
     // Set the real email in a way that's not immediately accessible to bots
-    setRealEmail('contato@tritoninfosec.com');
+    setRealEmail('contact@tritoninfosec.com');
   }, []);
 
   const handleEmailClick = (e: React.MouseEvent) => {
@@ -20,23 +19,23 @@ const Footer = () => {
   
   const links = {
     company: [
-      { name: "Sobre", href: "#about" },
-      { name: "Serviços", href: "#services" },
-      // Link "Equipe" escondido conforme solicitado
-      { name: "Carreiras", href: "https://www.linkedin.com/company/triton-infosec-llc/jobs/?viewAsMember=true", external: true },
+      { name: "About", href: "#about" },
+      { name: "Services", href: "#services" },
+      // "Team" link hidden as requested
+      { name: "Careers", href: "https://www.linkedin.com/company/triton-infosec-llc/jobs/?viewAsMember=true", external: true },
     ],
     services: [
-      { name: "Teste de Intrusão Externa", href: "#services" },
-      { name: "Teste de Aplicações Web", href: "#services" },
-      { name: "Teste de Segurança de Rede", href: "#services" },
-      { name: "Teste de Aplicativos Móveis", href: "#services" },
+      { name: "External Penetration Testing", href: "#services" },
+      { name: "Web Application Testing", href: "#services" },
+      { name: "Network Security Testing", href: "#services" },
+      { name: "Mobile Application Testing", href: "#services" },
     ],
     resources: [
       { name: "Blog", href: "https://www.linkedin.com/company/triton-infosec-llc/posts/?feedView=all&viewAsMember=true", external: true },
-      // Link "Estudos de Caso" escondido conforme solicitado
-      { name: "Recursos de Segurança", href: "https://cheatsheetseries.owasp.org", external: true },
-      // Link "Perguntas Frequentes" escondido conforme solicitado
-      { name: "Treinamento", href: "https://webhacker.academy", external: true },
+      // "Case Studies" link hidden as requested
+      { name: "Security Resources", href: "https://cheatsheetseries.owasp.org", external: true },
+      // "FAQ" link hidden as requested
+      { name: "Training", href: "https://webhacker.academy", external: true },
     ],
   };
 
@@ -54,7 +53,7 @@ const Footer = () => {
               <span className="font-display font-bold text-xl">Triton Infosec</span>
             </div>
             <p className="text-white/70 mb-6 max-w-xs">
-              Especialistas em testes de intrusão e avaliações de cibersegurança, ajudando organizações a identificar e resolver vulnerabilidades de segurança.
+              Specialists in penetration testing and cybersecurity assessments, helping organizations identify and resolve security vulnerabilities.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/triton.infosec/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
@@ -76,7 +75,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Empresa</h3>
+            <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
               {links.company.map((link, index) => (
                 <li key={index}>
@@ -100,7 +99,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Serviços</h3>
+            <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-3">
               {links.services.map((link, index) => (
                 <li key={index}>
@@ -113,7 +112,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Recursos</h3>
+            <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-3">
               {links.resources.map((link, index) => (
                 <li key={index}>
@@ -137,14 +136,14 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Contato</h3>
+            <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li>
                 <a 
                   href="#" 
                   onClick={handleEmailClick}
                   className="text-white/70 hover:text-white transition-colors"
-                  aria-label="Enviar email para Triton Infosec"
+                  aria-label="Send email to Triton Infosec"
                 >
                   {emailDisplay}
                 </a>
@@ -155,7 +154,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="text-white/70">
-                Belo Horizonte, MG
+                Belo Horizonte, Brazil
               </li>
               <li className="mt-4">
                 <a 
@@ -176,12 +175,12 @@ const Footer = () => {
         
         <div className="pt-8 border-t border-white/10 text-center md:flex md:justify-between md:text-left">
           <p className="text-white/50 text-sm">
-            © {currentYear} Triton Infosec. Todos os direitos reservados.
+            © {currentYear} Triton Infosec. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 space-x-6">
-            <Link to="/privacy-policy" className="text-white/50 hover:text-white text-sm transition-colors">Política de Privacidade</Link>
-            <Link to="/terms-of-service" className="text-white/50 hover:text-white text-sm transition-colors">Termos de Serviço</Link>
-            <Link to="/cookie-policy" className="text-white/50 hover:text-white text-sm transition-colors">Política de Cookies</Link>
+            <Link to="/privacy-policy" className="text-white/50 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="text-white/50 hover:text-white text-sm transition-colors">Terms of Service</Link>
+            <Link to="/cookie-policy" className="text-white/50 hover:text-white text-sm transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

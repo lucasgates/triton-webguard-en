@@ -1,4 +1,3 @@
-
 import { Award, LockKeyhole } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -16,40 +15,40 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2 max-w-2xl animate-fade-up">
             <div className="inline-block mb-4 py-1 px-3 bg-accent1/10 rounded-full">
-              <p className="text-accent1 font-medium text-sm">Especialistas em Teste de Intrusão</p>
+              <p className="text-accent1 font-medium text-sm">Penetration Testing Specialists</p>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-security-800 leading-tight mb-6">
             
               <span className="relative inline-block ml">
-                <span className="text-gradient">Pentest </span>
+                <span className="text-gradient">Pentests </span>
                 <svg className="absolute -bottom-2 left-0 w-full h-2 text-accent1/20" 
                      viewBox="0 0 100 8" preserveAspectRatio="none">
                   <path d="M0,5 Q40,0 50,5 Q60,10 100,5 L100,8 L0,8 Z" fill="currentColor" />
                 </svg>
               </span>
-              &nbsp; que Impressionam Clientes.
+              &nbsp; that Impress Clients.
             </h1>
             
             <p className="text-lg text-security-600 mb-8 max-w-lg">
-              Clientes corporativos exigem cada vez mais transparêcia.
-              Comprove que seus sistemas estão protegidos com um relatório profissional de Teste De Intrusão (pentest) da Triton Infosec.
+              Corporate clients increasingly demand transparency.
+              Prove your systems are protected with a professional Penetration Test (pentest) report from Triton Infosec.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="btn-primary" size="lg" onClick={scrollToContact}>
-                Agende uma Consultoria
+                Schedule a Consultation
               </Button>
             </div>
             
             <div className="mt-10 flex items-center gap-6">
               <div className="flex items-center gap-2">
                 <Award className="h-5 w-5 text-accent2" />
-                <span className="text-sm text-security-600">Equipe OSCP</span>
+                <span className="text-sm text-security-600">OSCP Team</span>
               </div>
               <div className="flex items-center gap-2">
                 <LockKeyhole className="h-5 w-5 text-accent2" />
-                <span className="text-sm text-security-600">Certificações SANS</span>
+                <span className="text-sm text-security-600">SANS Certifications</span>
               </div>
             </div>
           </div>
@@ -59,7 +58,7 @@ const HeroSection = () => {
               <img 
                 className="w-full h-auto rounded-lg shadow-lg" 
                 src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80" 
-                alt="Profissional de cibersegurança trabalhando" 
+                alt="Cybersecurity professional working" 
                 loading="lazy"
               />
               
@@ -71,8 +70,8 @@ const HeroSection = () => {
                     className="h-10 w-10"
                   />
                   <div>
-                    <p className="font-semibold text-security-800">Pentesters especialistas</p>
-                    <p className="text-xs text-security-600">em testes de intrusão</p>
+                    <p className="font-semibold text-security-800">Expert pentesters</p>
+                    <p className="text-xs text-security-600">in penetration testing</p>
                   </div>
                 </div>
               </div>

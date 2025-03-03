@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -42,11 +41,11 @@ const Header = () => {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-white/70 hover:text-white font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent1 after:origin-bottom-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Serviços</a>
-          <a href="#approach" className="text-white/70 hover:text-white font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent1 after:origin-bottom-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Metodologia</a>
-          <a href="#about" className="text-white/70 hover:text-white font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent1 after:origin-bottom-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Sobre</a>
+          <a href="#services" className="text-white/70 hover:text-white font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent1 after:origin-bottom-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Services</a>
+          <a href="#approach" className="text-white/70 hover:text-white font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent1 after:origin-bottom-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">Methodology</a>
+          <a href="#about" className="text-white/70 hover:text-white font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent1 after:origin-bottom-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">About</a>
           <a href="#contact">
-            <Button className="bg-accent1 hover:bg-accent1-600 text-white">Fale Conosco</Button>
+            <Button className="bg-accent1 hover:bg-accent1-600 text-white">Contact Us</Button>
           </a>
         </nav>
 
@@ -54,7 +53,7 @@ const Header = () => {
         <button
           onClick={toggleMobileMenu}
           className="md:hidden text-white focus:outline-none"
-          aria-label="Alternar menu"
+          aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? (
             <X className="h-6 w-6 animate-fade-in" />
@@ -73,28 +72,28 @@ const Header = () => {
               className="py-2 text-white/70 hover:text-white font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Serviços
+              Services
             </a>
             <a 
               href="#approach" 
               className="py-2 text-white/70 hover:text-white font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Metodologia
+              Methodology
             </a>
             <a 
               href="#about" 
               className="py-2 text-white/70 hover:text-white font-medium transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Sobre
+              About
             </a>
             <a 
               href="#contact"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <Button className="w-full bg-accent1 hover:bg-accent1-600 text-white">
-                Fale Conosco
+                Contact Us
               </Button>
             </a>
           </div>
