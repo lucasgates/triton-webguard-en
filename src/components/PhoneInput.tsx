@@ -25,21 +25,19 @@ const PhoneInput: React.FC<PhoneInputProps> = ({ value, onChange, className }) =
   const [phoneNumber, setPhoneNumber] = useState(value.replace(/^\+\d+\s/, ''));
 
   const countryCodes: CountryCode[] = [
-    { code: 'US', dial: '+1', name: 'United States' },
+    { code: 'US', dial: '+1',  name: 'United States' },
     { code: 'BR', dial: '+55', name: 'Brazil' },
     { code: 'UK', dial: '+44', name: 'United Kingdom' },
-    { code: 'CA', dial: '+1', name: 'Canada' },
+    { code: 'CA', dial: '+1 ',  name: 'Canada' },
     { code: 'DE', dial: '+49', name: 'Germany' },
     { code: 'FR', dial: '+33', name: 'France' },
     { code: 'ES', dial: '+34', name: 'Spain' },
     { code: 'IT', dial: '+39', name: 'Italy' },
-    { code: 'PT', dial: '+351', name: 'Portugal' },
+    { code: 'PT', dial: '+351',name: 'Portugal' },
     { code: 'AU', dial: '+61', name: 'Australia' },
-    { code: 'JP', dial: '+81', name: 'Japan' },
-    { code: 'CN', dial: '+86', name: 'China' },
-    { code: 'IN', dial: '+91', name: 'India' },
     { code: 'MX', dial: '+52', name: 'Mexico' },
     { code: 'AR', dial: '+54', name: 'Argentina' },
+    { code: 'AR', dial: '+57', name: 'Colombia' },
   ];
 
   const handleCountryChange = (value: string) => {

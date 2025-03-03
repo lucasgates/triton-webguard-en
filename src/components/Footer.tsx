@@ -25,10 +25,10 @@ const Footer = () => {
       { name: "Careers", href: "https://www.linkedin.com/company/triton-infosec-llc/jobs/?viewAsMember=true", external: true },
     ],
     services: [
-      { name: "External Penetration Testing", href: "#services" },
+      { name: "Network Pentesting", href: "#services" },
       { name: "Web Application Testing", href: "#services" },
-      { name: "Network Security Testing", href: "#services" },
-      { name: "Mobile Application Testing", href: "#services" },
+      { name: "Mobile Pentesting", href: "#services" },
+      { name: "Cyber Security Consulting", href: "#services" },
     ],
     resources: [
       { name: "Blog", href: "https://www.linkedin.com/company/triton-infosec-llc/posts/?feedView=all&viewAsMember=true", external: true },

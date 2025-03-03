@@ -187,14 +187,14 @@ const ContactSection = () => {
     {
       icon: <Phone className="h-5 w-5 text-accent1" />,
       title: "Phone",
-      content: "+55 (31) 97229-1337",
-      href: "tel:+5531972291337",
+      content: "+1 (678) 459-2336",
+      href: "tel:+16784592336",
       ariaLabel: "Call Triton Infosec"
     },
     {
       icon: <MapPin className="h-5 w-5 text-accent1" />,
       title: "Address",
-      content: "Belo Horizonte, Brazil",
+      content: "Greater Nashville, TN",
       href: "#",
       ariaLabel: "View Triton Infosec location"
     }
@@ -209,9 +209,9 @@ const ContactSection = () => {
           </div>
           <h2 className="section-title">Want to know how secure your business is?</h2>
           <p className="section-subtitle max-w-3xl mx-auto">
-            Schedule a Free Consultation With Triton Infosec. In 30 minutes, we'll show you how your company can:
+            Schedule a call with our experts to discuss your security needs and how we can help.
           </p>
-          <div className="mt-6 space-y-4 text-left max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-sm">
+{/*           <div className="mt-6 space-y-4 text-left max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-sm">
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-accent1 flex items-center justify-center text-white shrink-0 mt-0.5">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -236,7 +236,7 @@ const ContactSection = () => {
                 Transform security into a competitive advantage to close more lucrative contracts.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -351,7 +351,7 @@ const ContactSection = () => {
                     </div>
                   ))}
                   
-                  <div className="mt-6 pt-6 border-t border-security-100">
+{/*                   <div className="mt-6 pt-6 border-t border-security-100">
                     <a 
                       href="https://wa.me/5531972291337" 
                       target="_blank" 
@@ -365,7 +365,7 @@ const ContactSection = () => {
                       </svg>
                       <span>Contact us via WhatsApp</span>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               
@@ -374,7 +374,7 @@ const ContactSection = () => {
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="w-6 h-6 rounded-full bg-accent1 flex items-center justify-center mr-3 mt-0.5 text-white font-bold text-xs">✓</div>
-                    <div>
+                    <div> 
                       <h4 className="font-medium">Specialized Team</h4>
                       <p className="text-sm text-white/80">We are a company specialized in penetration testing. We bring over a decade of proven experience to your company.</p>
                     </div>
