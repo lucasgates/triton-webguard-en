@@ -149,14 +149,14 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:+5531972291337" className="text-white/70 hover:text-white transition-colors">
-                  +55 (31) 97229-1337
+                <a href="tel:+16784592336" className="text-white/70 hover:text-white transition-colors">
+                  +1 (678) 459-2336
                 </a>
               </li>
               <li className="text-white/70">
-                Belo Horizonte, Brazil
+                Greater Nashville, TN
               </li>
-              <li className="mt-4">
+              {* <li className="mt-4">
                 <a 
                   href="https://wa.me/5531972291337" 
                   target="_blank" 
@@ -168,7 +168,7 @@ const Footer = () => {
                   </svg>
                   <span>WhatsApp</span>
                 </a>
-              </li>
+              </li> *}
             </ul>
           </div>
         </div>
