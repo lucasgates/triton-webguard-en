@@ -316,7 +316,7 @@ const ContactSection = () => {
                 </div>
                 <Button 
                   type="submit" 
-                  className="w-full bg-accent1 hover:bg-accent1-600 text-white"
+                  className="w-full bg-accent1 hover:bg-accent1-600 text-white plausible-event-name=ContactUs""
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
