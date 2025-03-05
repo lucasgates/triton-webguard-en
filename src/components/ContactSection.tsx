@@ -243,7 +243,7 @@ const ContactSection = () => {
           <div className="animate-fade-up">
             <div className="bg-white rounded-2xl shadow-lg p-8 h-full">
               <h3 className="text-2xl font-semibold mb-6 text-security-800">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6 plausible-event-name=ContactUs">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-security-700" htmlFor="name">Full Name</label>
@@ -316,7 +316,7 @@ const ContactSection = () => {
                 </div>
                 <Button 
                   type="submit" 
-                  className="w-full bg-accent1 hover:bg-accent1-600 text-white plausible-event-name=ContactUs""
+                  className="w-full bg-accent1 hover:bg-accent1-600 text-white"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
