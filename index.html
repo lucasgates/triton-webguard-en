@@ -4,6 +4,17 @@
 
   <script defer data-domain="tritoninfosec.com" data-api="https://s.tritoninfosec.com.br/party/event" src="https://s.tritoninfosec.com.br/joker/script.js"></script>
 
+  <script>
+	useEffect(() => {
+	  const script = document.createElement("script");
+	  script.src = "https://s.tritoninfosec.com.br/joker/plausible.js";
+	  script.defer = true;
+	  document.body.appendChild(script);
+	}, []);
+
+
+  </script>
+
 <!-- Matomo Tag Manager -->
 <script>
   var _mtm = window._mtm = window._mtm || [];
