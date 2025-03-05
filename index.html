@@ -2,7 +2,20 @@
 <html lang="en">
   <head>
 
-  <script defer data-domain="tritoninfosec.com" data-api="https://s.tritoninfosec.com.br/party/event" src="https://s.tritoninfosec.com.br/joker/script.js"></script>
+	  <!-- <script defer data-domain="tritoninfosec.com" data-api="https://s.tritoninfosec.com.br/party/event" src="https://s.tritoninfosec.com.br/joker/script.js"></script> -->
+
+
+  <script>
+	var script = document.createElement('script');
+	script.defer = true;
+	script.dataset.domain = "tritoninfosec.com";
+	script.dataset.api = "https://s.tritoninfosec.com.br/party/event";
+	script.src = "https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js";
+	document.getElementsByTagName('head')[0].appendChild(script);
+  </script>
+
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
 
 <!-- Matomo Tag Manager -->
 <script>
