@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
 
 const CookieBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,9 +24,9 @@ const CookieBanner = () => {
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-sm text-security-600 flex-grow">
           We use cookies to improve your experience on our site. By continuing to browse, you agree to our{' '}
-          <Link to="/cookie-policy" className="text-accent1 hover:underline">
+          <a href="/cookie-policy" className="text-accent1 hover:underline">
             Cookie Policy
-          </Link>
+          </a>
           .
         </div>
         <Button onClick={handleAccept} className="whitespace-nowrap">

@@ -154,12 +154,3 @@ body::-webkit-scrollbar-thumb:hover {
   background: #666;
 }
 
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}

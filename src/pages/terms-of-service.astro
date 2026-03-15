@@ -1,0 +1,73 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import '@/index.css';
+---
+
+<BaseLayout
+  title="Terms of Service | Triton Infosec"
+  description="Terms and conditions for using Triton Infosec's penetration testing and cybersecurity services."
+  canonicalPath="/terms-of-service"
+>
+  <div class="flex flex-col min-h-screen">
+    <Header client:load />
+
+    <main class="flex-grow pt-32 pb-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-10 flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent1"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            <h1 class="text-3xl md:text-4xl font-display font-bold text-security-800">Terms of Service</h1>
+          </div>
+
+          <div class="prose prose-lg max-w-none">
+            <p class="lead">By accessing and using Triton Infosec's services, you agree to the following terms and conditions.</p>
+
+            <h2>Acceptance of Terms</h2>
+            <p>By accessing or using our website and services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access or use our services.</p>
+
+            <h2>Service Description</h2>
+            <p>Triton Infosec offers penetration testing and security assessment services. We reserve the right to modify, suspend, or discontinue any part of our services at any time, with or without notice.</p>
+
+            <h2>Testing Authorization</h2>
+            <p>All penetration testing and security assessment services are performed only with express written authorization from the client. It is the client's responsibility to ensure they have legal authority to authorize testing on the target networks and systems.</p>
+
+            <h2>Acceptable Use</h2>
+            <p>You agree not to use our website or services to:</p>
+            <ul>
+              <li>Violate applicable laws or regulations</li>
+              <li>Infringe on the rights of third parties</li>
+              <li>Attempt unauthorized access to systems or networks</li>
+              <li>Distribute malware or malicious content</li>
+              <li>Conduct any activity that may harm our services or other users</li>
+            </ul>
+
+            <h2>Intellectual Property</h2>
+            <p>All content available on our website, including text, graphics, logos, icons, and images, is the property of Triton Infosec and is protected by copyright laws. You may not reproduce, distribute, or create derivative works from our content without our express written permission.</p>
+
+            <h2>Confidentiality</h2>
+            <p>We treat all data and information shared with us with strict confidentiality. Our staff are required to maintain the confidentiality of all information obtained during the provision of services.</p>
+
+            <h2>Limitation of Liability</h2>
+            <p>Under no circumstances shall Triton Infosec, its directors, employees, or agents be liable for direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use our services.</p>
+
+            <h2>Indemnification</h2>
+            <p>You agree to indemnify and hold harmless Triton Infosec and its employees from any claim, liability, damage, or cost that may arise from your use of our services or violation of these Terms.</p>
+
+            <h2>Governing Law</h2>
+            <p>These Terms shall be governed and construed in accordance with the laws of Brazil, without regard to its conflict of law principles.</p>
+
+            <h2>Changes to Terms</h2>
+            <p>We reserve the right to modify these Terms at any time. Changes take effect immediately after being posted on our website. Your continued use of our services after such changes constitutes your acceptance of the new Terms.</p>
+
+            <h2>Contact</h2>
+            <p>If you have questions about these Terms, please contact us at contact@tritoninfosec.com.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </div>
+</BaseLayout>

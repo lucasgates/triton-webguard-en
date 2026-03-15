@@ -1,0 +1,218 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+}
+
+const { title, description, canonicalPath = '' } = Astro.props;
+const canonicalURL = `https://tritoninfosec.com${canonicalPath}`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      var script = document.createElement('script');
+      script.defer = true;
+      script.dataset.domain = "tritoninfosec.com";
+      script.dataset.api = "https://s.tritoninfosec.com.br/party/event";
+      script.src = "https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js";
+      document.getElementsByTagName('head')[0].appendChild(script);
+    </script>
+
+    <script is:inline>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+    <!-- Matomo Tag Manager -->
+    <script is:inline>
+      var _mtm = window._mtm = window._mtm || [];
+      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+      (function() {
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://analytics.tritoninfosec.com.br/js/container_HFbfITk6.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Triton Infosec" />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/png" href="/lovable-uploads/409b9c61-6849-4bae-9bb9-8e10117d3995.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Triton Infosec" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content="https://tritoninfosec.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://tritoninfosec.com/og-image.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://tritoninfosec.com/#organization",
+          "name": "Triton Infosec",
+          "url": "https://tritoninfosec.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://tritoninfosec.com/lovable-uploads/c263fbf1-0b0e-4b8d-a3e2-1d6e7941f5dd.png"
+          },
+          "description": "Triton Infosec is a cybersecurity company specializing in penetration testing services, helping organizations identify and remediate security vulnerabilities.",
+          "telephone": "+1-678-459-2336",
+          "email": "contact@tritoninfosec.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nashville",
+            "addressRegion": "TN",
+            "addressCountry": "US"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/triton-infosec-llc/",
+            "https://www.instagram.com/triton.infosec/",
+            "https://youtube.com/lucasgates"
+          ],
+          "knowsAbout": [
+            "Penetration Testing",
+            "Cybersecurity",
+            "Application Security",
+            "Vulnerability Assessment",
+            "Network Security",
+            "Mobile Security"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://tritoninfosec.com/#website",
+          "url": "https://tritoninfosec.com",
+          "name": "Triton Infosec",
+          "publisher": { "@id": "https://tritoninfosec.com/#organization" }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://tritoninfosec.com/#localbusiness",
+          "name": "Triton Infosec",
+          "url": "https://tritoninfosec.com",
+          "telephone": "+1-678-459-2336",
+          "email": "contact@tritoninfosec.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nashville",
+            "addressRegion": "TN",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "36.1627",
+            "longitude": "-86.7816"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "United States"
+          },
+          "priceRange": "$$",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Cybersecurity Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Network Penetration Testing",
+                  "description": "Simulated cyber attacks targeting external and internal networks, including customized phishing campaigns."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Application Security Testing",
+                  "description": "In-depth security evaluation of web applications to identify vulnerabilities in design and implementation."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Vulnerability Analysis",
+                  "description": "Network security posture evaluation to identify flaws with detailed remediation reports."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cyber Security Consulting",
+                  "description": "Security risk evaluation with expert recommendations to strengthen organizational cybersecurity."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Mobile Penetration Testing",
+                  "description": "Security assessments of iOS and Android applications to identify data exposure and privacy risks."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Secure Development Training",
+                  "description": "Training for development teams on security best practices throughout the software development lifecycle."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    })} />
+
+    <!-- Google Tag Manager -->
+    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W8BSGDVD');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8BSGDVD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <slot />
+
+    <!-- Google Ads Conversion Tracking -->
+    <script is:inline>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16483009804/6LGyCKnSp-AZEIyK87M9',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+  </body>
+</html>

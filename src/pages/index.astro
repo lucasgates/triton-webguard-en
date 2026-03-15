@@ -1,0 +1,33 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import ServicesSection from '@/components/ServicesSection';
+import ApproachSection from '@/components/ApproachSection';
+import AboutSection from '@/components/AboutSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
+import CookieBanner from '@/components/CookieBanner';
+import '@/index.css';
+---
+
+<BaseLayout
+  title="Triton Infosec | Penetration Testing & Cybersecurity Services | Nashville, TN"
+  description="Triton Infosec provides expert penetration testing (pentest), application security testing, vulnerability analysis, and cybersecurity consulting. OSCP & SANS certified team based in Nashville, TN."
+  canonicalPath="/"
+>
+  <div class="flex flex-col min-h-screen">
+    <Header client:load />
+    <main class="flex-grow">
+      <HeroSection client:load />
+      <ServicesSection />
+      <ApproachSection />
+      <AboutSection />
+      <ContactSection client:visible />
+    </main>
+    <Footer />
+    <ScrollToTop client:load />
+    <CookieBanner client:load />
+  </div>
+</BaseLayout>

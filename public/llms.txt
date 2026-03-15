@@ -1,0 +1,37 @@
+# Triton Infosec
+
+> Triton Infosec is a cybersecurity company specializing in penetration testing (pentest) services. Based in Greater Nashville, Tennessee, we help organizations identify and remediate security vulnerabilities through expert-led offensive security assessments.
+
+## Services
+
+- **Network Penetration Testing**: Simulated cyber attacks targeting external and internal networks, including customized phishing campaigns.
+- **Application Security Testing**: In-depth security evaluation of web applications to identify design and implementation vulnerabilities. Ideal for SaaS providers.
+- **Vulnerability Analysis**: Network security posture evaluation to identify flaws, with detailed remediation reports.
+- **Cyber Security Consulting**: Security risk evaluation with expert recommendations to strengthen organizational cybersecurity.
+- **Mobile Penetration Testing**: Security assessments of iOS and Android applications to identify data exposure and privacy risks.
+- **Secure Development Training**: Training for development teams on security best practices throughout the software development lifecycle.
+
+## Methodology
+
+We follow industry best practices including PTES, NIST, and OWASP WSTG. Our four-phase approach:
+
+1. Discovery & Definition — Understand systems, applications, and security concerns to define testing scope.
+2. Planning & Reconnaissance — Gather information and develop a customized testing strategy.
+3. Testing & Exploitation — Identify and safely exploit vulnerabilities to demonstrate real impacts.
+4. Analysis & Reporting — Deliver detailed reports with vulnerability explanations, risk levels, and remediation steps.
+
+## Team Qualifications
+
+- OSCP certified pentesters
+- SANS certifications
+- Over a decade of experience across diverse industries
+
+## Contact
+
+- Website: https://tritoninfosec.com
+- Email: contact@tritoninfosec.com
+- Phone: +1 (678) 459-2336
+- Location: Greater Nashville, TN
+- LinkedIn: https://www.linkedin.com/company/triton-infosec-llc/
+- Instagram: https://www.instagram.com/triton.infosec/
+- YouTube: https://youtube.com/lucasgates

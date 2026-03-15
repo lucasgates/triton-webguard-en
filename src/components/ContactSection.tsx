@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { Toaster } from '@/components/ui/toaster';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import PhoneInput from './PhoneInput';
 
@@ -406,6 +407,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+      <Toaster />
     </section>
   );
 };

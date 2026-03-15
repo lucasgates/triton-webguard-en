@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -178,9 +177,9 @@ const Footer = () => {
             © {currentYear} Triton Infosec. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 space-x-6">
-            <Link to="/privacy-policy" className="text-white/50 hover:text-white text-sm transition-colors">Privacy Policy</Link>
-            <Link to="/terms-of-service" className="text-white/50 hover:text-white text-sm transition-colors">Terms of Service</Link>
-            <Link to="/cookie-policy" className="text-white/50 hover:text-white text-sm transition-colors">Cookie Policy</Link>
+            <a href="/privacy-policy" className="text-white/50 hover:text-white text-sm transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service" className="text-white/50 hover:text-white text-sm transition-colors">Terms of Service</a>
+            <a href="/cookie-policy" className="text-white/50 hover:text-white text-sm transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>

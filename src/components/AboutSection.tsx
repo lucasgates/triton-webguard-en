@@ -1,5 +1,3 @@
-import { Shield } from 'lucide-react';
-
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-security-800 text-white">
